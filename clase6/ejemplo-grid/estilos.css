@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+
+/* grid explicitos
+
+.grid-container{
+    display: grid;
+    background-color: rgb(160, 74, 160);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    gap: 2rem;
+    padding: 2rem;
+}
+.producto{
+    background-color: rgb(171, 189, 206);
+    padding: 2rem;
+    border: 1px solid black;
+    text-align: center;
+}
+
+*/
+
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "nav header header"
+    "nav producto publicidad"
+    "nav servicio publicidad"
+    "nav footer footer";
+
+    grid-template-rows: 100px 1fr 1 fr 75px;
+    grid-template-columns: 25% auto 15%;
+    row-gap: 1rem;
+    column-gap: 20px;
+    height: 100vh;
+}
+
+.header{
+background-color: rgb(159, 117, 199);
+grid-area: header;
+}
+
+footer{
+    background-color: red;
+    grid-area: footer;
+}
+
+#producto{
+    background-color: aqua;
+    grid-area: producto;
+}
+
+#servicio{
+    background-color: green;
+    grid-area: servicio;
+}
+
+.navegacion{
+    background-color: pink;
+    grid-area: nav;
+}
+
+.aside{
+    background-color: chocolate;
+    grid-area: publicidad;
+}
+
+.borde{
+    border: 1px solid red;
+}
