@@ -58,7 +58,7 @@ let titulo = document.querySelector('#titulo');
 let parrafos = document.querySelectorAll('.parrafo');
 let cambiarTextoBtn = document.querySelector('#cambiarTexto');
 let cambiarColorBtn = document.querySelector('#cambiarColor');
-let cambiarClaseBtn = document.querySelector('#cambiarClase')
+let cambiarClaseBtn = document.querySelector('#cambiarClase');
 
 
 console.log(titulo);
